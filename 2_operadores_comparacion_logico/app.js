@@ -14,13 +14,22 @@ console.log( 5 + "3")
 console.log( 5 + "3")
 
 //pida dos numeros al usuaio y sumelos
-let num1 = prompt( 'dame num 1' )
-let num2 = prompt( 'dame num 2' )
-let resultado = num1 + num2
-alert( " El resultado de tu suma es " + resultado)
+let numA = prompt( 'dame num 1' )
+let numB = prompt( 'dame num 2' )
+let resultado = numA + numB
+//alert( " El resultado de tu suma es " + resultado)
 
+//Mostrar los valores de A y B
+let ValorA = numA;
+let ValorB = numB;
+let a = ValorA;
+let b = ValorB;
+alert("El valor A es = (" + ValorA +")) y el valor B es = ( " + ValorB + ")");
 
-let num4 = prompt( 'dame num 1' )
-let num3 = prompt( 'dame num 2' )
-let result = Number(num1) + Number(num2)
-alert( '"{num1}" + "{num2}" == "resultado"' )
+alert("La suma de (" + a + ") + (" + b + ") es = " + (a + b));
+alert("La resta de (" + a + ") - (" + b + ") es = "+ (a - b));
+alert("La multiplicacion de (" + a + ") * (" + b + ") es = " + (a * b) + ")");
+alert("La division de (" + a + ") / (" + b + ") es = " + (a / b));
+
+//
+console.log(`Tu numero es ${numA} `);
