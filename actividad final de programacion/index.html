@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Helenia</title>
+    <link rel="shortcut icon" href="icono.ico" type="image/x-icon">
+</head>
+<body>
+<header>
+    <nav class="logo">
+      <img src="icono.ico" alt="icono" style="width: 70px; height: 70px; justify-items: end;">
+    </nav>
+    <nav class="manu">
+      <ul>
+        <li><a href="#resumen">Resumen</a></li>
+        <li><a href="#pys">Problemas y soluciones</a></li>
+        <li><a href="#gallery">Galería</a></li>
+        <li><a href="#sec">Contacto</a></li>
+      </ul>
+    </nav>
+
+      <form class="search-box" onsubmit="return buscarTexto()" method="get">
+  <input type="search" id="busqueda" placeholder="Buscar...">
+  <button type="submit">Buscar</button>
+</form>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1 class="ho">HELENITA VARGAS <br> “LA RONCA DE ORO”</h1>
+      <p>Página dedicada a mostrar parte del proyecto de un cómic <br>digital interactivo dedicado a la carrera musical de Helenita Vargas.</p>
+      <p><strong>Gracias por su atención</strong></p>
+    </div>
+    <div>
+        
+      <img src="helenita.jpg" alt="Castillo" >
+    </div>
+
+  </section>
+
+ <!-- resumen -->
+  <div class="principal">
+   <section id="resumen">
+    <h1>Resumen</h1>
+    <p>El proyecto tiene como objetivo crear un cómic digital interactivo sobre Helenita Vargas, una famosa cantante colombiana conocida
+         como "La Ronca de Oro". Este cómic se enfocará en su vida, que resalta la resiliencia, autenticidad y su impacto en la música popular colombiana
+        , el propósito es atraer el interés cultural de los jóvenes, educarlos y preservar la memoria histórica de esta a
+        rtista en un entorno digital, el objetivo principal es fomentar la identidad cultural colombiana entre los jóvenes a través 
+        de esta narrativa interactiva, se busca mostrar la vida de Helenita Vargas como un ejemplo de empoderamiento femenino y mot
+        ivar a las nuevas generaciones a valorar el patrimonio musical y artístico del país, los objetivos específicos del proyecto i
+        ncluyen investigar y documentar la vida de Helenita Vargas, realizar encuestas para medir el conocimiento de los jóvenes sobre
+         ella y la música tradicional colombiana, desarrollar una plataforma digital con su discografía e historias y crear un guion q
+         ue resalte su legado, la justificación del proyecto radica en que la música tradicional colombiana está siendo olvidada por l
+         os jóvenes, quienes prefieren géneros más modernos. El cómic digital se plantea como una herramienta diseñada para conectar
+          con ellos y presentar la historia de Helenita, quien representa temas de autenticidad y empoderamiento que son relevantes en
+           la actualidad, el público objetivo son jóvenes de 19 a 22 años, especialmente aquellos interesados en música urbana y contenido digital, el proyecto busca educar sobre el impacto de Helenita Vargas
+           y su lucha en una industria masculina, ofreciendo su historia de forma moderna que resuene con sus hábitos digitales.
+</p>
+   </section>
+  </div>
+
+ 
+  
+</head>
+<body>
+ <div id="pys">
+    <div class="column">
+      <h2>Problemas</h2>
+      <ol>
+        <li>Muchos jóvenes no saben quién fue Helenita Vargas ni qué cantaba.</li>
+        <li>Su estilo de música suena viejo o poco atractivo para el gusto actual.</li>
+        <li>No tiene presencia en redes sociales actuales como TikTok o Instagram.</li>
+        <li>Su historia no se divulga en medios masivos modernos.</li>
+        <li>No se promueve su vida artística en instituciones educativas.</li>
+      </ol>
+    </div>
+
+    <div class="column">
+      <h2>Soluciones</h2>
+      <ol>
+        <li>Adaptar sus canciones con sonidos modernos o versiones colaborativas.</li>
+        <li>Relacionar su historia con temas actuales como el empoderamiento femenino.</li>
+        <li>Incluir su legado en proyectos escolares, actividades culturales y playlists educativas.</li>
+        <li>Crear contenido introductorio que explique quién fue y por qué fue importante.</li>
+        <li>Difundir su obra en redes sociales con formatos digitales atractivos.</li>
+      </ol>
+    </div>
+  </div>
+  
+  <!-- galeria -->
+<section id="gallery" class="gallery-section">
+  <h1 class="h1">Galería de Helenita Vargas</h1>
+
+  <!-- Contenedor principal de las tarjetas -->
+  <div class="gallery-container">
+
+    <!-- Tarjeta 1:audio -->
+    <div class="card">
+      <img src="frontal.jpg" alt="Imagen 1">
+      <div class="card-content">
+        <h3>Álbum Icónico</h3>
+        <p>Uno de los discos más representativos de Helenita Vargas que marcó la música popular colombiana.</p>
+        <button id="audioBtn" onclick="toggleAudio()">Escuchar</button>
+        <audio id="audioHelenita" src="helenita.mp3"></audio>
+      </div>
+    </div>
+
+    <!-- Tarjeta 2: video -->
+    <div class="card">
+      <img src="OIP.jpg" alt="Imagen 2">
+      <div class="card-content">
+        <h3>Presentación en Vivo</h3>
+        <p>Concierto memorable donde mostró su poderosa voz frente a miles de espectadores.</p>
+        <button id="videoBtn" onclick="toggleVideo()"> Ver video</button>
+
+        <div id="videoContainer" style="display: none; margin-top: 10px;">
+          <video id="videoHelenita" width="100%" controls>
+            <source src="helen.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="vive.jpg" alt="Imagen 3">
+      <div class="card-content">
+        <h3>Legado Cultural</h3>
+        <p>Reconocida como una figura de empoderamiento femenino en la música latinoamericana.</p>
+        <button onclick="openModal()">Leer</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="bioModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-body">
+        <div class="modal-image">
+          <img src="joven.jpg" alt="Helenita Vargas">
+        </div>
+        <div class="modal-text">
+          <h2>Biografía de Helenita Vargas</h2>
+          <p>
+            Helenita Vargas, conocida como "La Ronca de Oro", fue una icónica cantante colombiana nacida en Cali.
+            Su poderosa voz y estilo único la convirtieron en una de las figuras más representativas de la música ranchera en Colombia,
+            en una época donde este género estaba dominado por voces masculinas.
+          </p>
+          <p>
+            A lo largo de su carrera, Helenita rompió barreras sociales, convirtiéndose en símbolo de empoderamiento femenino.
+            Su legado artístico no solo está en sus canciones, sino en su lucha por abrir espacio a las mujeres en la industria musical del país.
+          </p>
+          <p>
+            Su autenticidad y fuerza interpretativa continúan inspirando a nuevas generaciones de artistas y oyentes,
+            quienes ven en ella un ícono de resistencia y pasión por la música.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- contacto -->
+  <section id="sec">
+    <h1 class="h1">Tu Contacto</h1>
+    <div class="form-container">
+    <h2>Formulario </h2>
+    <form id="formulario">
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre...">
+      </div>
+
+      <div class="form-group">
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com">
+      </div>
+
+      <div class="form-group">
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..."></textarea>
+      </div>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div id="mensajeExito">¡Formulario enviado correctamente!</div>
+  </div>
+</section>
+<footer>
+  <div class="footer-container">
+    
+    <!-- Logo y descripción -->
+    <div class="footer-section logo-section">
+      <img src="icono.ico" alt="Logo Helenita Vargas" width="60">
+      <p>© 2025 Helenita Vargas<br>La Ronca de Oro</p>
+    </div>
+
+    <!-- Mapa del sitio -->
+    <div class="footer-section sitemap">
+      <h4>Mapa del sitio</h4>
+      <ul>
+        <li><a href="#resumen">Resumen</a></li>
+        <li><a href="#pys">Problemas y Soluciones</a></li>
+        <li><a href="#gallery">Galería</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+
+    <!-- Redes sociales -->
+    <div class="footer-section social">
+      <h4>Síguenos</h4>
+      <a href="https://facebook.com" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/25/ffffff/facebook--v1.png" alt="Facebook">
+      </a>
+      <a href="https://instagram.com" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/25/ffffff/instagram-new.png" alt="Instagram">
+      </a>
+      <a href="https://youtube.com" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/25/ffffff/youtube-play.png" alt="YouTube">
+      </a>
+    </div>
+
+  </div>
+</footer>
+
+  
+    <script src="app.js"></script>
+</body>
+</html>
